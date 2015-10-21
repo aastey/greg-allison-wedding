@@ -1,7 +1,7 @@
 /* general styles */
 @font-face {
     font-family: roboto_light;
-    src: url('../fonts/Roboto-Thin.ttf');
+    src: url('../fonts/Roboto-Light.ttf');
 }
 @font-face {
     font-family: roboto_reg;
@@ -29,7 +29,10 @@ a {
 	color:#f4ca71; 
 }
 
-
+a.dark-link {
+    font-family: roboto_reg;
+    color: black;
+}
 /* padded section */
 .pad-section {
   padding: 50px 0;
@@ -83,6 +86,7 @@ a {
     -o-background-size: cover;
     background-size: cover;
     padding: 0 5%;
+    z-index:100;
 }
 .home-text-container {
 	font-family: roboto_light;
@@ -174,7 +178,7 @@ a {
     -o-animation-delay: .5s;
     -o-animation-iteration-count: 1;
     float: right;
-    margin-right: -200px;
+    margin-right: -100px;
     margin-top: -150px;
 }
 
@@ -187,8 +191,13 @@ a {
 	 margin-bottom: 20px;
     font-family: roboto_reg;
 }
+#logistics {
+    background-color: #0e1835;
+    color: white;
+    padding: 5% 0;
+}
 #bolger {
-	background: url(../images/bolgercenter.jpg) no-repeat center center fixed;
+	background: url('../images/bolgercenter.jpg') no-repeat center center fixed;
     display: table;
     height: 60%;
     position: relative;
@@ -199,16 +208,43 @@ a {
     background-size: cover;
     padding: 0 5%;
 }
+#thanks {
+    background-image: url('../images/thanks.png');
+    background-color: black;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:500px;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
 #google_map {
   height: 500px;
 }
-footer {
-  padding: 20px 0;
+
+#faqs {
+    background-color: white;
+    margin-bottom: 0px;
 }
-footer .glyphicon {
-  color: #333333;
-  font-size: 60px;
+
+.btn-faqs{
+    background: none;
+    border: none;
+    color: black;
+    font-family: roboto_reg;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
-footer .glyphicon:hover {
-  color: #306d9f;
+.btn-faqs:hover,
+.btn-faqs:active,
+.btn-faqs:focus{
+    background: none;
+    border: none;
+    border-color: white;
+    color: #f4ca71;
+    font-family: roboto_reg;
+    padding: 0;
 }
+
