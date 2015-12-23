@@ -19,6 +19,44 @@
 }
 
 
+/* Edits to teh bootstrap to create 5 columns */
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
 
 html, body {
   height: 100%;
@@ -32,6 +70,12 @@ a {
 a.dark-link {
     font-family: roboto_reg;
     color: black;
+}
+p {
+    line-height: 25px;
+}
+.bold-text {
+    font-weight: bold;
 }
 /* padded section */
 .pad-section {
@@ -76,7 +120,7 @@ a.dark-link {
 }
 /* additional sections */
 #home {
-    background: url(../images/spaceBackground1.jpg) no-repeat center center fixed;
+    background: url(../images/spaceBackground1.jpg) no-repeat bottom center fixed;
     display: table;
     height: 100%;
     position: relative;
@@ -86,7 +130,6 @@ a.dark-link {
     -o-background-size: cover;
     background-size: cover;
     padding: 0 5%;
-    z-index:100;
 }
 .home-text-container {
 	font-family: roboto_light;
@@ -151,7 +194,18 @@ a.dark-link {
 	background-size: 30%;
 	border-width: 190px 0 0 0;
 	color: white;
-	padding: 10% 0;
+	padding: 10% 0 4% 0;
+
+}
+#fivefacts{
+    background-color: black;
+    background-image: url('../images/stars.jpg');
+    background-size: cover;
+    background-position:  100% 100%;
+    background-size: 30%;
+    border-width: 190px 0 0 0;
+    color: white;
+    padding: 2% 0 10% 0;
 
 }
 #aboutuscontent {
@@ -179,7 +233,7 @@ a.dark-link {
     -o-animation-iteration-count: 1;
     float: right;
     margin-right: -100px;
-    margin-top: -150px;
+    margin-top: -50px;
 }
 
 #wedding {
@@ -191,10 +245,17 @@ a.dark-link {
 	 margin-bottom: 20px;
     font-family: roboto_reg;
 }
+.wedding-info-p {
+    margin: 0;
+}
 #logistics {
     background-color: #0e1835;
     color: white;
     padding: 5% 0;
+}
+.logistics-header  {
+     margin-bottom: 5px;
+    font-family: roboto_reg;  
 }
 #bolger {
 	background: url('../images/bolgercenter.jpg') no-repeat center center fixed;
@@ -209,15 +270,15 @@ a.dark-link {
     padding: 0 5%;
 }
 #thanks {
-    background-image: url('../images/thanks.png');
-    background-color: black;
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height:500px;
-    bottom: 0;
-    z-index: -1;
+    background: url(../images/thanks.png) no-repeat center center fixed;
+    display: table;
+    height: 500px;
+    position: relative;
     width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #google_map {
   height: 500px;
@@ -227,7 +288,13 @@ a.dark-link {
     background-color: white;
     margin-bottom: 0px;
 }
-
+.five-facts-left {
+    text-align: left;
+    float: left;
+}
+.bold-link {
+    font-weight: bold;
+}
 .btn-faqs{
     background: none;
     border: none;
