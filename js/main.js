@@ -36,13 +36,29 @@ $(document).ready(function (){
 
 $('#aboutpic').waypoint(function() {
   $('#aboutuscontent').removeClass("animated fadeOut")
-     $('#earthpic').removeClass("animated fadeOutRight")
      $('#aboutuscontent').addClass("animated fadeIn")
-     $('#earthpic').addClass("animated fadeInRight")
   }, {
     offset: '100%'
   });
 
+$('#fivefacts1').waypoint(function() {
+     $('#fivefactsSectionOne').removeClass("animated fadeOutRight")
+     $('#earthpic').removeClass("animated fadeOutRight")
+     $('#earthpic').addClass("animated fadeInRight")
+     $('#fivefactsSectionOne').addClass("animated fadeInRight")
+  }, {
+    offset: '100%'
+  });
+
+$('#fivefacts2').waypoint(function() {
+      $('#satpic').removeClass("animated fadeOutLeft")
+      $('#fivefactsSectionTwo').removeClass("animated fadeOutLeft")
+     $('#satpic').addClass("animated fadeInLeft")
+
+     $('#fivefactsSectionTwo').addClass("animated fadeInLeft")
+  }, {
+    offset: '100%'
+  });
 
 
 function scrollNav() {

@@ -186,7 +186,9 @@ p {
     background-size: cover;
 
 }
-#about{
+#about,
+#fivefacts1,
+#fivefacts2{
 	background-color: black;
 	background-image: url('../images/stars.jpg');
 	background-size: cover;
@@ -196,6 +198,9 @@ p {
 	color: white;
 	padding: 10% 0 4% 0;
 
+}
+#fivefacts1 {
+    text-align: right;
 }
 #fivefacts{
     background-color: black;
@@ -233,6 +238,21 @@ p {
     -o-animation-iteration-count: 1;
     float: right;
     margin-right: -100px;
+    margin-top: -50px;
+}
+#satpic {
+    width: 500px;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: .5s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-duration: 3s;
+    -moz-animation-delay: .5s;
+    -moz-animation-iteration-count: 1;
+    -o-animation-duration: 3s;
+    -o-animation-delay: .5s;
+    -o-animation-iteration-count: 1;
+    float: left;
+    margin-left: -100px;
     margin-top: -50px;
 }
 
